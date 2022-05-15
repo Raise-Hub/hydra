@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hydra/modules/home_page/home_page.dart';
+import 'package:hydra/modules/home/home_page.dart';
 
 import 'modules/login/login_page.dart';
 
