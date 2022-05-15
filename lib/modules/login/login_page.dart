@@ -13,7 +13,8 @@ class _LoginPageState extends State<LoginPage> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   Future<void> _login() async {
-    print("CLICOU");
+    print('CLICOU');
+    // Navigator.of(context).popAndPushNamed('/players');
   }
 
   @override
@@ -44,13 +45,19 @@ class _LoginPageState extends State<LoginPage> {
                     decoration: const InputDecoration(
                       label: Text('User'),
                     ),
+                    validator: (value) {
+                      return null;
+                    },
                   ),
                   const SizedBox(height: 15),
                   TextFormField(
                     obscureText: true,
                     decoration: const InputDecoration(
                       label: Text('Password')
-                    )
+                    ),
+                    validator: (password) {
+                      return null;
+                    },
                   ),
                   const SizedBox(height: 15),
                   ElevatedButton(
