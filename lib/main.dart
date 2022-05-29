@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: appTitle,
       home: const LoginPage(),
-      theme: ThemeData.dark()
     );
   }
 }
