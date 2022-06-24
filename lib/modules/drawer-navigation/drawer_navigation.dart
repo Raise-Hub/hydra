@@ -24,7 +24,7 @@ class _DrawerNavigationState extends State<DrawerNavigation> {
             padding: const EdgeInsets.all(80.0),
             child: Text(
               'HYDRA',
-              style: TextStyles.titleBoldBackground,
+              style: TextStyles.titleHydra,
             ),
           ),
           const Divider(

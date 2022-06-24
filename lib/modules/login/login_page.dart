@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hydra/modules/cadastro/cadastro_page.dart';
 import 'package:hydra/modules/home/home_page.dart';
 import 'package:hydra/shared/themes/app_images.dart';
 import 'package:hydra/shared/themes/app_text_styles.dart';
@@ -17,6 +18,13 @@ class _LoginPageState extends State<LoginPage> {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const HomePage())  
+    ); // Navigator.of(context).popAndPushNamed('/players');
+  }
+
+  Future<void> _register() async {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const CadastroPage())  
     ); // Navigator.of(context).popAndPushNamed('/players');
   }
 
@@ -70,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
                     padding: const EdgeInsets.all(20),
                     child: InkWell(
                       child: const Text('Registre-se'),
-                      onTap: () {},
+                      onTap: _register,
                     ),
                   )
                 ],

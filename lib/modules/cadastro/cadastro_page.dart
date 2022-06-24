@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hydra/modules/login/login_page.dart';
 import 'package:hydra/shared/themes/app_images.dart';
 import 'package:hydra/shared/themes/app_text_styles.dart';
 
@@ -13,8 +14,10 @@ class _CadastroPageState extends State<CadastroPage> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   Future<void> _cadastrar() async {
-    print('CLICOU');
-    // Navigator.of(context).popAndPushNamed('/players');
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const LoginPage())  
+    ); // Navigator.of(context).popAndPushNamed('/players');
   }
 
   @override
