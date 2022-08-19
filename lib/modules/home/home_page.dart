@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: CurvedNavigationBar(
         key: navigationKey,
         backgroundColor: Colors.transparent,
-        color: Colors.blueGrey,
+        color: Color.fromARGB(255, 168, 195, 209),
         buttonBackgroundColor: Colors.grey,
         height: 60,
         index: index,
